@@ -4,6 +4,6 @@ workflow "run maven build on pull request" {
 }
 
 action "GitHub Action for Maven" {
-  uses = "LucaFeger/action-maven-cli@9d8f23af091bd6f5f0c05c942630939b6e53ce44"
-  runs = "test"
+  uses = "xlui/action-maven-cli/jdk8@master"
+  args = "clean package"
 }
