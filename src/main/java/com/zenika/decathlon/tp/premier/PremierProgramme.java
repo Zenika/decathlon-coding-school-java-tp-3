@@ -22,8 +22,15 @@ public class PremierProgramme {
 		int number = Integer.parseInt(value);
 		return String.format("fibonacci(%d)=%d", number, fibonacci(number));
 	}
-	
+
+
 	public static int fibonacci(int value) {
-		// TODO implémenter cette fonction
+		if(value==0){
+		    return 0;
+        } else if (value == 1){
+		    return 1;
+        } else {
+            return fibonacci(value-2) + fibonacci(value-1);
+        }
 	}
 }
