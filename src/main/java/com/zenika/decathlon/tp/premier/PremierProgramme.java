@@ -22,8 +22,25 @@ public class PremierProgramme {
 		int number = Integer.parseInt(value);
 		return String.format("fibonacci(%d)=%d", number, fibonacci(number));
 	}
-	
+    /** 
+     *  
+     * @param integer
+     * @return integer
+     */
+
 	public static int fibonacci(int value) {
 		// TODO implémenter cette fonction
+		int somme=0;
+		switch (value) {
+			case 0 :
+				somme=0;
+				break;
+			case 1 :
+				somme=1;
+				break;
+			default :
+				somme=fibonacci(value-1)+fibonacci(value-2);
+		}
+		return somme;
 	}
 }
