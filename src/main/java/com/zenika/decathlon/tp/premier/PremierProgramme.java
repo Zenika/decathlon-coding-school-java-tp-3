@@ -16,6 +16,8 @@ public class PremierProgramme {
 		System.out.println(Arrays.asList(args).stream()
 			.map(PremierProgramme::fibonacci)
 			.collect(Collectors.toList()));
+		System.out.println(fibonacci(10));
+		
 	}
 	
 	public static String fibonacci(String value) {
@@ -25,5 +27,12 @@ public class PremierProgramme {
 	
 	public static int fibonacci(int value) {
 		// TODO implémenter cette fonction
+		if (value==0) {
+			return 0;
+		} else if (value==1) {
+			return 1;
+		} else {
+			return fibonacci(value -1) + fibonacci(value - 2);
+		}
 	}
 }
