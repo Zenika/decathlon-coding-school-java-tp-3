@@ -17,17 +17,17 @@ public class PremierProgramme {
 			.map(PremierProgramme::fibonacci)
 			.collect(Collectors.toList()));
 	}
+
+	public static String fibonacci(String value) {
+		int number = Integer.parseInt(value);
+		return String.format("fibonacci(%d)=%d", number, fibonacci(number));
+	}
     /** 
      *  
      * @param integer
      * @return integer
      */
-	public static String fibonacci(String value) {
-		int number = Integer.parseInt(value);
-		return String.format("fibonacci(%d)=%d", number, fibonacci(number));
-	}
-
-	public static int 	(int value) {
+	public static int fibonacci(int value) {
 		// TODO implémenter cette fonction
 		int somme=0;
 		switch (value) {
