@@ -25,7 +25,7 @@ public class PremierProgramme {
 	
 	/**
 	 * Ma toute première methode
-	 * @param value aa
+	 * @param value a
 	 * @return 
 	 */
 	public static int fibonacci(int value) {
