@@ -25,5 +25,13 @@ public class PremierProgramme {
 	
 	public static int fibonacci(int value) {
 		// TODO implémenter cette fonction
+		switch (value) {
+		case 0:
+			return 0;
+		case 1:
+			return 1;
+		default:
+			return fibonacci(value - 1) + fibonacci(value - 2); 
+		}
 	}
 }
