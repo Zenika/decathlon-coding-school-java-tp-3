@@ -23,7 +23,20 @@ public class PremierProgramme {
 		return String.format("fibonacci(%d)=%d", number, fibonacci(number));
 	}
 	
+	/**
+	 * Ma toute première methode
+	 * @param value aaaa
+	 * @return 
+	 */
 	public static int fibonacci(int value) {
 		// TODO implémenter cette fonction
+		switch (value) {
+		case 0:
+			return 0;
+		case 1:
+			return 1;
+		default:
+			return fibonacci(value-1) +  fibonacci(value -2);
+		}
 	}
 }
